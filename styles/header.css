@@ -1,0 +1,87 @@
+.header {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid black;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo > p {
+  margin-top: 0px;
+  font-size: 10px;
+}
+
+.middle-section {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-bar {
+  height: 40px;
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+}
+
+.keyboard-button {
+  position: absolute;
+  right: 50px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.create-button {
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.notifications-button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.notification-count {
+  position: absolute;
+  top: -4px;
+  left: 12px;
+  border-radius: 22px;
+  padding: 0 4px;
+  background-color: red;
+}
+
+.user-avatar {
+  height: 32px;
+  border-radius: 50%;
+}

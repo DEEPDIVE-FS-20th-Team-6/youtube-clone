@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: gray;
+}
+
+button,
+div,
+nav {
+  border: 1px solid black;
+  background-color: gray;
+}
+
+main {
+  display: grid;
+  margin-left: 240px;
+}

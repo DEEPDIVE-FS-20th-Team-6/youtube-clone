@@ -1,0 +1,23 @@
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100vh;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar-subscription > img {
+  height: 24px;
+  border-radius: 12px;
+}
