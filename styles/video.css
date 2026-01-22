@@ -1,5 +1,5 @@
 .video-grid {
-  position: fixed;
+  position: relative;
   display: grid;
 }
 
