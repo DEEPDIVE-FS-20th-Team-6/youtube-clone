@@ -1,0 +1,21 @@
+/* 쇼츠 */
+.shorts-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.short-card {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.short-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.short-card p {
+  font-size: 14px;
+  margin-top: 6px;
+}
