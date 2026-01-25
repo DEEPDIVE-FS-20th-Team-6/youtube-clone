@@ -1,23 +1,73 @@
 .sidebar {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 56px;
+  background-color: white;
   width: 240px;
-  height: 100vh;
+  z-index: 95;
+  overflow-y: auto;
+  padding-top: 12px;
 }
 
 .sidebar-section {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 0;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
 }
 
 .sidebar-section > div {
+  height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0 12px;
+  margin: 0 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #0f0f0f;
 }
 
-.sidebar-subscription > img {
+.sidebar-section > div:hover {
+  background-color: #f2f2f2;
+}
+
+.sidebar-section img {
   height: 24px;
-  border-radius: 12px;
+  width: 24px;
+  margin-right: 24px;
+  object-fit: cover;
+}
+
+.sidebar-subscription img,
+.user-avatar {
+  border-radius: 50%;
+}
+
+.footer {
+  padding: 0 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.guide-links-primary a,
+.guide-links-secondary a {
+  text-decoration: none;
+  color: #606060;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.copylight {
+  font-size: 12px;
+  color: #909090;
+  margin-top: 16px;
 }

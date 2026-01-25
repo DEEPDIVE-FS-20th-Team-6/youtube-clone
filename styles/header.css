@@ -5,83 +5,148 @@
   align-items: center;
   justify-content: space-between;
 
-  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .left-section {
   display: flex;
-  flex-direction: row;
   align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-right: 24px;
+  cursor: pointer;
 }
 
 .logo {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  height: 20px;
 }
 
 .logo > p {
-  margin-top: 0px;
+  margin: 0 0 10px 4px;
   font-size: 10px;
+  color: #606060;
 }
 
 .middle-section {
-  height: 40px;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 640px;
 }
 
 .search-box {
-  position: relative;
-  height: 40px;
-  border-radius: 20px;
   display: flex;
-  flex-direction: row;
+  flex: 1;
   align-items: center;
+  height: 40px;
 }
 
 .search-bar {
-  height: 40px;
-  border-radius: 20px 0 0 20px;
+  flex: 1;
   height: 100%;
+  font-size: 16px;
+  padding-left: 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+  box-shadow: inset 0 1px 2px #eee;
+  width: 0;
+}
+
+.search-button {
+  height: 40px;
+  width: 64px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f9f9f9;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .keyboard-button {
   position: absolute;
-  right: 50px;
+  right: 60px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .right-section {
+  width: 180px;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
+.create-button, .notifications-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+
 .create-button {
-  height: 36px;
-  border-radius: 18px;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  gap: 6px;
+  background-color: #f2f2f2;
+  padding: 6px 12px;
+  border-radius: 18px;
 }
 
 .notifications-button {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .notification-count {
   position: absolute;
-  top: -4px;
-  left: 12px;
-  border-radius: 22px;
-  padding: 0 4px;
-  background-color: red;
+  top: -2px;
+  right: -2px;
+  background-color: #cc0000;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .user-avatar {
   height: 32px;
+  width: 32px;
   border-radius: 50%;
+  cursor: pointer;
 }
