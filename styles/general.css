@@ -1,16 +1,28 @@
-body {
-  margin: 0;
-  background-color: gray;
+:root {
+  --header-height: 56px;
+  --sidebar-width: 240px;
+  --bg-color: #f9f9f9;
 }
 
-button,
-div,
-nav {
-  border: 1px solid black;
-  background-color: gray;
+body {
+  margin: 0;
+  padding-top: var(--header-height);
+  padding-left: var(--sidebar-width);
+  background-color: var(--bg-color);
+  font-family: Roboto, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 main {
-  display: grid;
-  margin-left: 240px;
+  padding: 24px;
+  background-color: var(--bg-color);
 }
